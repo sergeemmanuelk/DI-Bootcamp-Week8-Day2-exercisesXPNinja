@@ -13,7 +13,7 @@ WHERE customer_id = (
   WHERE first_name = 'Scott'
 );
 
-![](cap1.png)
+![image](https://github.com/sergeemmanuelk/DI-Bootcamp-Week8-Day2-exercisesXPNinja/blob/main/img/cap1.png)
 
 <!-- Does Scott still exist in the customers table, even though he has been deleted? Try and find him. -->
 SELECT * FROM customers 
@@ -25,7 +25,7 @@ SELECT p.id, p.customer_id, p.item_id, p.quantity_purchased, c.first_name, c.las
 FROM purchases p
 RIGHT JOIN customers c ON c.id = p.customer_id ;
 
-![](cap2.png)
+![image](https://github.com/sergeemmanuelk/DI-Bootcamp-Week8-Day2-exercisesXPNinja/blob/main/img/cap2.png)
 
 
 <!-- Use SQL to find all purchases. Join purchases with the customers table, so that Scott’s order will NOT appear. (Which kind of join should you use?) -->
@@ -34,4 +34,4 @@ SELECT p.id, p.customer_id, p.item_id, p.quantity_purchased, c.first_name, c.las
 FROM purchases p
 INNER JOIN customers c ON c.id = p.customer_id;
 
-![](cap3.png)
+![image](https://github.com/sergeemmanuelk/DI-Bootcamp-Week8-Day2-exercisesXPNinja/blob/main/img/cap3.png)
